@@ -1,0 +1,61 @@
+/* general styles */
+	table {
+		margin-bottom: 20px;
+		border-collapse: collapse;
+		font-size: 12px;
+		font-family: georgia;
+	}
+	caption {
+		margin: 12px 0;
+		font-weight: bold;
+		text-align: center;
+		color: #666;
+	}
+	td, th {
+		border: 1px solid #ddd;
+		padding: 5px 5px;
+		color: #333;
+	}
+	td {
+		width: 60px;
+		text-align: center;
+	}
+	th {
+		padding: 2px 20px;
+		font-weight: normal;
+	}
+	
+/* styles for Value Based Styling */
+	.vbs-NaN {
+		/* for td's with non-numeric values */
+		color: #ccc;
+	}
+	.vbs-zero {
+		/* for td's with value of zero */
+	}
+
+/* styles for smallest and biggest positive and negative values; all styles in between will be calculated and defined automatically (only for properties color, background-color and font-size; make sure all font-sizes are specified with the same unit)*/
+	.vbs-posVal-1 {
+		/* smallest positive value */
+		color: #333;
+		background-color: #f9fff9;
+		font-size: 12px;
+	}
+	.vbs-posVal-Max {
+		/* biggest positive value */
+		color: #090;
+		background-color: #dfd;
+		font-size: 18px;
+	}
+	.vbs-negVal-1 {
+		/* smallest positive value */
+		color: #900;
+		font-size: 12px;
+		background-color: #fff9f9;
+	}
+	.vbs-negVal-Max {
+		/* biggest positive value */
+		color: #c00;
+		background-color: #fee;
+		font-size: 18px;
+	}
